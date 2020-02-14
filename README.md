@@ -1,1 +1,1 @@
-fibo112.github.io/singolo/singolo.html
+fibo112.github.io/singolo/singolo1.html
