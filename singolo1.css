@@ -1,10 +1,33 @@
 @font-face {
-    font-family: Lato-Semibold; /* Имя шрифта */
-      src: url(assets/fonts/Lato-Semibold.ttf); /* Путь к файлу со шрифтом */
-    }
+    font-family: 'Lato-Semibold', sans-serif;
+    src: url('./assets/fonts/Lato-Semibold.ttf') format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Lato-Black';
+    src: url('./assets/fonts/Lato-Black.ttf') format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {    
+    font-family: 'Lato-Regular';
+    src: url('./assets/fonts/Lato-Regular.ttf') format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {    
+    font-family: 'Lato-Light';
+    src: url('./assets/fonts/Lato-Light.ttf') format("truetype");
+    font-style: normal; 
+    font-weight: normal;
+}
 
 body {
-    font-family: Lato-Semibold, sans-serif;
+    font-family: 'Lato-Semibold';
     max-width: 1020px;
     margin: 0 auto;
     background: #666666;
@@ -20,7 +43,7 @@ body {
 .header {
     height: 90px;  
     align-items: center;
-    font-family: Lato-Semibold;
+    font-family: 'Lato-Semibold';
 }
 
 .bigheader{
@@ -43,6 +66,7 @@ h1{
     color: #ffffff;
     padding-left: 0px;    
     max-width: 200px;
+    font-family: 'Lato-Regular';
 }
 
 li {
@@ -72,7 +96,7 @@ ul {
     text-decoration: none;
     padding-left: 31px ;
     font-size: 12px;
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Regular';
     padding-bottom: 19px;
     letter-spacing: -0.5px;
 }
@@ -165,7 +189,7 @@ ul {
 h2 {
     font-size: 30px;
     color: #666d89;
-    font-family: Lato-bold, sans-serif;
+    font-family: 'Lato-Black';
     font-weight: 700;
     height: 31px;
     letter-spacing: -1px;
@@ -177,7 +201,7 @@ h2 {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato-Light';
     padding-top: 0px;
     letter-spacing: -0.3px;
 }
@@ -218,7 +242,7 @@ h2 {
     font-size: 18px;
     color: #666d89;
     max-height: 15px;
-    font-family: Lato-bold, sans-serif;
+    font-family: 'Lato-Black';
     letter-spacing: -0.8px;
     word-spacing: -0.5px;
 }
@@ -235,7 +259,7 @@ h3 {
     max-height: 55px;
     margin-top: 15px;
     line-height: 1.8;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato-Light';
     letter-spacing: 0.05px;
     word-break: break-all;
     word-spacing: 0.5px;
@@ -249,9 +273,7 @@ h3 {
     margin-right: 0px;
 }
 
-
-/*footer*/
-.footer {
+.down_place {
     background-color: #fff;
     height: 15px;
 }
