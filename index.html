@@ -16,17 +16,13 @@
                 <div class="bigheader">
                     <div class="container">
                         <h1>SINGOLO<span>*</span></h1>
-                        <ul class="nav">
-                            <li><a href="#" class="link-header">HOME</a></li>
-                            <li class="link-header dot">&middot;</li>
-                            <li><a href="#" class="link-header">SERVICES</a></li>
-                            <li class="link-header dot">&middot;</li>
-                            <li><a href="#" class="link-header">PORTFOLIO</a></li>
-                            <li class="link-header dot">&middot;</li>
-                            <li><a href="#" class="link-header">ABOUT</a></li>
-                            <li class="link-header dot">&middot;</li>
-                            <li><a href="#" class="link-header">CONTACT</a></li>
-                        </ul>
+                        <nav id="nav" class="nav">
+                            <a href="#" class="link-header active">HOME</a>
+                            <a href="#services" class="link-header">SERVICES</a>
+                            <a href="#portfolio" class="link-header">PORTFOLIO</a>
+                            <a href="#about" class="link-header">ABOUT</a>
+                            <a href="#contact" class="link-header">CONTACT</a>
+                        </nav>
                     </div>
                 </div>     
             </div> 
@@ -36,20 +32,29 @@
         
         <div class="slider">
             <div class="container">
-                <div class="slider-inner">
-                    <a href="#" class="arrows"><img src="assets/arrow_left.png" class="listing" alt="left button"></a>
-                    <p><img src="assets/phone_vertical.png" class="phone_vertical"></p>
-                    <p><img src="assets/phone_gorizontal.png" class="phone_gorizontal"></p>
-                    <a href="#"><img src="assets/arrow_right.png" class="listing" alt="right button"></a>
+                <div id="slider" class="slider-inner">
+                    <img src="assets/arrow_left.png" class="arrow_left listing" alt="left button">
+                    <div>
+                        <img src="assets/phonever.png" class="phone_vertical ver_ind1">
+                        <img src="assets/phoneverblack.png" class="phone_vertical phone_verticalOff hidden ver_ind1">
+                        <img src="assets/shad_ver.png" class="ver_ind2">
+                    </div>
+                    <div>
+                        <img src="assets/phonehor.png" class="phone_gorizontal ver_ind3">
+                        <img src="assets/phonehorblack.png" class=" phone_gorizontalOff hidden ver_ind3">
+                        <img src="assets/shad_hor.png" class="ver_ind4">
+                    </div>
+                    <img src="assets/arrow_right.png" class="arrow_right listing" alt="right button">
+                </div>
+                <div id="slider-inner-blue" class="slider-inner-blue hidden">
+                    <img src="assets/arrow_left.png" class="arrow_left listing" alt="left button">
+                    <img src="assets/arrow_right.png" class="arrow_right listing" alt="right button">    
                 </div>
             </div>
         </div>
-        <div class="slider-footer">
-            
-        </div>
-        
+        <div class="slider-footer"></div>
         <main>
-            <div class="services">
+            <div id="services" class="services">
                 <div class="container">
                     <div class="content">
                         <div class="our">
@@ -109,8 +114,9 @@
         </main>
         <div class="down_place">
         </div>
+
 <!--Singolo. Part2-->
-<div class="portfolio">
+<div id="portfolio" class="portfolio">
     <div class="container">
         <div class="portfolio_inner">
             <h2 class="portfolio_logo">Portfolio</h2>
@@ -123,7 +129,7 @@
             <a href="#"><button>Graphic Design</button></a>
             <a href="#"><button>Artwork</button></a>
         </div>
-        <div class="images">
+        <div id="images" class="images">
             <img src="assets/ship.png" alt="">
             <img src="assets/green_colobok.png" alt="">
             <img src="assets/night_city.png" alt="">
@@ -141,7 +147,7 @@
 </div>
 <div class="portfolio_footer">
 </div>
-<div class="about_us">
+<div id="about" class="about_us">
     <div class="container">
         <div class="about_text">
             <h2>About Us</h2>
@@ -193,8 +199,9 @@
 </div>
 <div class="about_footer">
 </div>
-<!--Singolo. Part3-->
-<div class="get_quote">
+
+<!--Singolo. Contacs-->
+<div id="contact" class="get_quote">
     <div class="container">
         <div class="get_quote_text">
             <h2 class="get_logo">Get a Quote</h2>
@@ -208,13 +215,19 @@
         <div class="container">
             <div class="contact_information_inner">
                 <div class="form">
-                    <form>
+                    <form id="form">
                         <input type="text" name="firstname" required placeholder="Name (Required)">
                         <input type="email" name="mail" required placeholder="Email (Required)">
                         <input type="text" name="subject" placeholder="Subject">
-                        <textarea>Describe your project in detail...</textarea>
+                        <textarea placeholder="Describe your project in detail..."></textarea>
                         <input type="submit" class="submit" value="Submit">
                     </form>
+                </div>
+                <div id="popup_window" class="popup_window hidden">
+                    <p>Your email has been sent</p>
+                    <p id="topic">No topic</p>
+                    <p id="description">No description</p>
+                    <button id="close_button">OK</button>
                 </div>
                 <div class="contact_information_text">
                     <h2>Contact Information</h2>
@@ -256,5 +269,6 @@
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
